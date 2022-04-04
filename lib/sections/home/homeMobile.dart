@@ -49,17 +49,17 @@ class _HomeMobileState extends State<HomeMobile> {
                               : Colors.white,
                           fontWeight: FontWeight.w200),
                     ),
-                    Image.asset(
-                      "assets/hi.gif",
-                      height: height * 0.03,
-                    ),
+                    // Image.asset(
+                    //   "assets/hi.gif",
+                    //   height: height * 0.03,
+                    // ),
                   ],
                 ),
                 SizedBox(
                   height: height * 0.01,
                 ),
                 Text(
-                  "Muhammad",
+                  "Mohamad",
                   style: GoogleFonts.montserrat(
                       fontSize: height * 0.055,
                       color: _themeProvider.lightTheme
@@ -69,7 +69,7 @@ class _HomeMobileState extends State<HomeMobile> {
                       letterSpacing: 1.1),
                 ),
                 Text(
-                  "Hamza",
+                  "Al-Homsi",
                   style: GoogleFonts.montserrat(
                       color: _themeProvider.lightTheme
                           ? Colors.black
@@ -94,8 +94,8 @@ class _HomeMobileState extends State<HomeMobile> {
                             fontWeight: FontWeight.w200),
                         text: [
                           " Flutter Developer",
-                          " Technical Writer",
-                          " UI/UX Enthusiast"
+                          " Problem Solver",
+                          " Techincal Geek"
                         ]),
                   ],
                 ),

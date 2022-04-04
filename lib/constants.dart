@@ -6,11 +6,11 @@ const Color kPrimaryColor = Color(0xffC0392B);
 
 // Social Media
 const kSocialIcons = [
-  "https://img.icons8.com/metro/208/ffffff/facebook-new--v2.png",
-  "https://img.icons8.com/ios-glyphs/480/ffffff/instagram-new.png",
+  "https://cdn-icons.flaticon.com/png/512/4494/premium/4494475.png?token=exp=1649069000~hmac=4cf060aa45e5b9ab65d08273b464303f",
+  "https://cdn-icons-png.flaticon.com/512/732/732200.png",
   "https://img.icons8.com/android/480/ffffff/twitter.png",
-  "https://img.icons8.com/metro/308/ffffff/linkedin.png",
-  "https://img.icons8.com/material-rounded/384/ffffff/github.png",
+  "https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1649069123~hmac=e11c50d2bf95f302f46163d53f7fb7b9",
+  "https://cdn-icons-png.flaticon.com/512/733/733553.png",
   "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
 ];
 
@@ -24,8 +24,9 @@ const kSocialLinks = [
 ];
 
 // URL Launcher
-void launchURL(String _url) async =>
-    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
+void launchURL(String _url) async => await canLaunch(_url)
+    ? await launch(_url)
+    : throw 'Could noبمعt launch $_url';
 
 // Community
 final kCommunityLogo = [
