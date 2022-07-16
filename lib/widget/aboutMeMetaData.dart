@@ -6,9 +6,10 @@ import 'package:provider/provider.dart';
 class AboutMeMetaData extends StatelessWidget {
   final String data;
   final String information;
-  final Alignment alignment;
+  final Alignment? alignment;
 
-  const AboutMeMetaData({Key key, this.data, this.information, this.alignment})
+  const AboutMeMetaData(
+      {Key? key, required this.data, required this.information, this.alignment})
       : super(key: key);
   @override
   Widget build(BuildContext context) {

@@ -104,12 +104,12 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
 
 class ServiceCardBackWidget extends StatelessWidget {
   const ServiceCardBackWidget(
-      {Key key,
-      @required ThemeProvider themeProvider,
-      @required this.height,
-      @required this.width,
-      this.serviceDesc,
-      this.serviceTitle})
+      {Key? key,
+      required ThemeProvider themeProvider,
+      required this.height,
+      required this.width,
+      required this.serviceDesc,
+      required this.serviceTitle})
       : _themeProvider = themeProvider,
         super(key: key);
 

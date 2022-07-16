@@ -11,10 +11,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
 class ServiceDetailsDesktop extends StatelessWidget {
-  final String serviceTitle;
-  final String details;
+  final String? serviceTitle;
+  final String? details;
 
-  const ServiceDetailsDesktop({Key key, this.details, this.serviceTitle})
+  const ServiceDetailsDesktop({Key? key, this.details, this.serviceTitle})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -25,8 +25,8 @@ class ServiceDetailsDesktop extends StatelessWidget {
         children: [
           Expanded(
               child: ServiceDetailsDescription(
-            serviceTitle: serviceTitle,
-            desc: details,
+            serviceTitle: serviceTitle ?? "",
+            desc: details ?? "",
           )),
           Expanded(child: ServicesShowCase()),
         ],
@@ -39,7 +39,8 @@ class ServiceDetailsDescription extends StatelessWidget {
   final String serviceTitle;
   final String desc;
 
-  const ServiceDetailsDescription({Key key, this.desc, this.serviceTitle})
+  const ServiceDetailsDescription(
+      {Key? key, required this.desc, required this.serviceTitle})
       : super(key: key);
   @override
   Widget build(BuildContext context) {

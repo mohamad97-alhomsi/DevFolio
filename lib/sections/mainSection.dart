@@ -202,7 +202,7 @@ class _MainPageState extends State<MainPage> {
           );
   }
 
-  Widget _appBarTabDesktop(ThemeProvider _themeProv) {
+  AppBar _appBarTabDesktop(ThemeProvider _themeProv) {
     return AppBar(
       elevation: 0.0,
       backgroundColor: _themeProv.lightTheme ? Colors.white : Colors.black,
@@ -349,10 +349,10 @@ class SectionsBody extends StatelessWidget {
   final Widget Function(int) sectionWidget;
 
   const SectionsBody({
-    Key key,
-    this.scrollController,
-    this.sectionsLength,
-    this.sectionWidget,
+    Key? key,
+    required this.scrollController,
+    required this.sectionsLength,
+    required this.sectionWidget,
   }) : super(key: key);
   @override
   Widget build(BuildContext context) {

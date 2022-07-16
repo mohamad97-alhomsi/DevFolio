@@ -13,17 +13,17 @@ class ServiceCard extends StatefulWidget {
   final String serviceDescription;
   final String serviceLink;
   final double cardWidth;
-  final double cardHeight;
+  final double? cardHeight;
   final Widget cardBack;
 
   const ServiceCard({
-    @required this.serviceIcon,
-    this.serviceTitle,
-    this.serviceDescription,
-    this.serviceLink,
+    required this.serviceIcon,
+    required this.serviceTitle,
+    required this.serviceDescription,
+    required this.serviceLink,
     this.cardHeight,
-    this.cardWidth,
-    this.cardBack,
+    required this.cardWidth,
+    required this.cardBack,
   });
 
   @override
@@ -45,12 +45,12 @@ class _ServiceCardState extends State<ServiceCard> {
           setState(() {
             isHover = true;
           });
-          cardKey.currentState.toggleCard();
+          cardKey.currentState!.toggleCard();
         } else {
           setState(() {
             isHover = false;
           });
-          cardKey.currentState.toggleCard();
+          cardKey.currentState!.toggleCard();
         }
       },
       child: FlipCard(
